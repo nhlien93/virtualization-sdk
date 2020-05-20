@@ -1,0 +1,7 @@
+arrange:
+  - Overview.md
+  - Plugin_Config.md
+  - Decorators.md
+  - Plugin_Operations.md
+  - Converting_Migration_Scripts.md
+  - Workflows.md
