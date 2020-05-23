@@ -36,7 +36,7 @@
     
     
       
-        <title>Converting Migration Scripts - Delphix Virtualization SDK 2.1.0</title>
+        <title>Converting Lua Upgrade Scripts to Python Data Migrations - Delphix Virtualization SDK 2.1.0</title>
       
     
     
@@ -73,7 +73,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#converting-migration-scripts" tabindex="1" class="md-skip">
+      <a href="#converting-lua-upgrade-scripts-to-python-data-migrations" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -99,7 +99,7 @@
                 Delphix Virtualization SDK 2.1.0
               </span>
               <span class="md-header-nav__topic">
-                Converting Migration Scripts
+                Converting Lua Upgrade Scripts to Python Data Migrations
               </span>
             
           
@@ -449,11 +449,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Converting Migration Scripts
+        Converting Lua Upgrade Scripts to Python Data Migrations
       </label>
     
-    <a href="./" title="Converting Migration Scripts" class="md-nav__link md-nav__link--active">
-      Converting Migration Scripts
+    <a href="./" title="Converting Lua Upgrade Scripts to Python Data Migrations" class="md-nav__link md-nav__link--active">
+      Converting Lua Upgrade Scripts to Python Data Migrations
     </a>
     
       
@@ -970,8 +970,8 @@
               
                 
                 
-                <h1 id="converting-migration-scripts">Converting Migration Scripts<a class="headerlink" href="#converting-migration-scripts" title="Permanent link">&para;</a></h1>
-<p>To convert migrations that were originally written in lua we need to determine which from version the migration is from, which object type the migration is written for, and lastely convert the code into python code using the <a href="../Decorators/">decorators</a> described previously.</p>
+                <h1 id="converting-lua-upgrade-scripts-to-python-data-migrations">Converting Lua Upgrade Scripts to Python Data Migrations<a class="headerlink" href="#converting-lua-upgrade-scripts-to-python-data-migrations" title="Permanent link">&para;</a></h1>
+<p>To convert migrations (a.k.a. "upgrade scripts") that were originally written in lua we need to get the version that the migration upgrades from, the object type the migration is written for, and lastly convert the code into python code using the <a href="../Decorators/">decorators</a> described previously.</p>
 <h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
 <p>Assume there are two versions of a lua toolkit, 1.0.0 and 1.1.0 where the 1.1.0 version is following the basic toolkit directory structure (actually containing all operations):</p>
 <div class="codehilite"><pre><span></span>├── main.json
@@ -1021,7 +1021,7 @@
 </pre></div>
 
 
-<p>You will need to determine how far back in the lua upgrade chain you want to support multi-step upgrade from, and convert all of them accordingly. Remember that the execution of these scripts rely on there not being any missing migrations, and will be executed from the lowest version that exists to the highest version.</p>
+<p>You will need to determine how far back in the lua upgrade chain you want to support multi-step upgrade from, and convert all of the upgrade scripts accordingly. Remember that the execution of these scripts rely on there not being any missing migrations, and will be executed from the lowest version that exists to the highest version.</p>
                 
                   
                 
