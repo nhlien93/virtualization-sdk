@@ -1739,7 +1739,7 @@
 <tr>
 <td>migration_type</td>
 <td>String</td>
-<td>This migration type field indicates whether the operation is lua or just a regular data migration. Signify this as LUA so that the major minor version can be used. If not defined, this field will default to MigrationType.PLATFORM.</td>
+<td>This migration type field indicates whether the operation is lua or just a regular data migration. Signify this as LUA so that the major minor version can be used. If not defined, this operation will default to a regular <a href="../../../References/Plugin_Operations/#repository-data-migration">repository data migration</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -1814,7 +1814,7 @@ A migrated version of the <code>old_repository</code> input that must conform to
 <tr>
 <td>migration_type</td>
 <td>String</td>
-<td>This migration type field indicates whether the operation is lua or just a regular data migration. Signify this as LUA so that the major minor version can be used. If not defined, this field will default to MigrationType.PLATFORM.</td>
+<td>This migration type field indicates whether the operation is lua or just a regular data migration. Signify this as LUA so that the major minor version can be used. If not defined, this operation will default to a regular <a href="../../../References/Plugin_Operations/#source-config-data-migration">source config data migration</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -1889,7 +1889,7 @@ A migrated version of the <code>old_source_config</code> input that must conform
 <tr>
 <td>migration_type</td>
 <td>String</td>
-<td>This migration type field indicates whether the operation is lua or just a regular data migration. Signify this as LUA so that the major minor version can be used. If not defined, this field will default to MigrationType.PLATFORM.</td>
+<td>This migration type field indicates whether the operation is lua or just a regular data migration. Signify this as LUA so that the major minor version can be used. If not defined, this operation will default to a regular <a href="../../../References/Plugin_Operations/#linked-source-data-migration">linked source data migration</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -1964,7 +1964,7 @@ A migrated version of the <code>old_linked_source</code> input that must conform
 <tr>
 <td>migration_type</td>
 <td>String</td>
-<td>This migration type field indicates whether the operation is lua or just a regular data migration. Signify this as LUA so that the major minor version can be used. If not defined, this field will default to MigrationType.PLATFORM.</td>
+<td>This migration type field indicates whether the operation is lua or just a regular data migration. Signify this as LUA so that the major minor version can be used. If not defined, this operation will default to a regular <a href="../../../References/Plugin_Operations/#virtual-source-data-migration">virtual source data migration</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -2039,7 +2039,7 @@ A migrated version of the <code>old_virtual_source</code> input that must confor
 <tr>
 <td>migration_type</td>
 <td>String</td>
-<td>This migration type field indicates whether the operation is lua or just a regular data migration. Signify this as LUA so that the major minor version can be used. If not defined, this field will default to MigrationType.PLATFORM.</td>
+<td>This migration type field indicates whether the operation is lua or just a regular data migration. Signify this as LUA so that the major minor version can be used. If not defined, this operation will default to a regular <a href="../../../References/Plugin_Operations/#snapshot-data-migration">snapshot data migration</a>.</td>
 </tr>
 </tbody>
 </table>
