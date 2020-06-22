@@ -1008,6 +1008,10 @@
 <p>The other way to migrate from a Lua toolkit to a plugin is to wait and write a python plugin only once you have new features you want to release. These new features may include schema changes to any of the objects. In this case you will need to update both the <a href="../Plugin_Config/">plugin config</a> and write new <a href="../Plugin_Operations/">Lua upgrade operations</a> for each of the objects that needs to be modified during the upgrade.</p>
 <h2 id="supporting-migrations-with-older-versions-of-lua">Supporting migrations with older versions of Lua<a class="headerlink" href="#supporting-migrations-with-older-versions-of-lua" title="Permanent link">&para;</a></h2>
 <p>Having the ability to define Lua upgrade operations in the new plugin code means that older Lua version migration scripts can be <a href="../Converting_Migration_Scripts/">converted</a>, enabling multi-step upgrades from older Lua versions to migrate and become plugins.</p>
+<div class="admonition warning">
+<p class="admonition-title">New versions of a Lua toolkit is strongly discouraged after Python Plugin is written</p>
+<p>After having written a Plugin to migrate a specific Lua toolkit, while possible, you should avoid writing new major/minor versions of the toolkit in Lua. Patch releases with no schema changes can still be done. If you need to write a new Lua toolkit version please contact Delphix Support to get help on updating migrations accordingly.</p>
+</div>
                 
                   
                 
