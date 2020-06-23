@@ -1140,10 +1140,10 @@
 
 
 <div class="admonition info">
-<p class="admonition-title">ID and luaName fields in plugins versus vs name field in toolkits</p>
+<p class="admonition-title"><code>id</code> and <code>luaName</code> fields in plugins versus <code>name</code> field in toolkits</p>
 <ul>
-<li>If the ID field of the plugin being uploaded happens to match the name field in the toolkit already installed on the engine, the upload will fail regardless of what the luaName is. Otherwise, the luaName will be used to determine if an already uploaded lua toolkit is considered a lower version of the plugin being uploaded. If the luaName is not set then no lua toolkit will be upgraded.</li>
-<li>When uploading a plugin with the luaName set, that luaName and ID pair will be the only pair uploaded successfully. Uploading a new plugin with the same luaName but different ID will fail.</li>
+<li>If the <code>id</code> of the plugin being uploaded happens to match the <code>name</code> in the toolkit already installed on the engine, the upload will fail regardless of what the <code>luaName</code> is. Otherwise, the <code>luaName</code> will be used to determine if an already uploaded lua toolkit is considered a lower version of the plugin being uploaded. If the <code>luaName</code> is not set then no lua toolkit will be upgraded.</li>
+<li>When uploading a plugin with the <code>luaName</code> set, that <code>luaName</code> and <code>id</code> pair will be the only pair uploaded successfully. Uploading a new plugin with the same <code>luaName</code> but different <code>id</code> will fail.</li>
 </ul>
 </div>
                 
