@@ -36,7 +36,7 @@
     
     
       
-        <title>User Visible Errors - Delphix Virtualization SDK 2.1.0</title>
+        <title>Scratch Paths - Delphix Virtualization SDK 2.1.0</title>
       
     
     
@@ -73,7 +73,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#user-visible-errors" tabindex="1" class="md-skip">
+      <a href="#scratch-paths" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -99,7 +99,7 @@
                 Delphix Virtualization SDK 2.1.0
               </span>
               <span class="md-header-nav__topic">
-                User Visible Errors
+                Scratch Paths
               </span>
             
           
@@ -669,56 +669,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        User Visible Errors
-      </label>
-    
-    <a href="./" title="User Visible Errors" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../User_Visible_Errors/" title="User Visible Errors" class="md-nav__link">
       User Visible Errors
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#fields" title="Fields" class="md-nav__link">
-    Fields
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" title="Example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -762,11 +717,20 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../Scratch_Paths/" title="Scratch Paths" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Scratch Paths" class="md-nav__link md-nav__link--active">
       Scratch Paths
     </a>
+    
   </li>
 
         
@@ -996,29 +960,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#fields" title="Fields" class="md-nav__link">
-    Fields
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" title="Example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1030,60 +971,23 @@
               
                 
                 
-                <h1 id="user-visible-errors">User Visible Errors<a class="headerlink" href="#user-visible-errors" title="Permanent link">&para;</a></h1>
-<p>Plugin authors can choose to fail a plugin operation by raising an exception of type <code>UserError</code> with a custom message, action and output for the end user.</p>
-<h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>message</td>
-<td>String</td>
-<td>Description of the failure to show the end user.</td>
-</tr>
-<tr>
-<td>action</td>
-<td>String</td>
-<td><strong>Optional</strong>. List of actions that the end user could take to fix the problem. If not provided, it defaults to <code>Contact the plugin author to correct the error.</code></td>
-</tr>
-<tr>
-<td>output</td>
-<td>String</td>
-<td><strong>Optional</strong>. Output or stack trace from the failure to give the end user more information so that they can self diagnose. If not provided, it defaults to the stack trace of the failure.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">pkgutil</span>
-<span class="kn">from</span> <span class="nn">dlpx.virtualization.platform</span> <span class="kn">import</span> <span class="n">Plugin</span>
-<span class="kn">from</span> <span class="nn">generated.definitions</span> <span class="kn">import</span> <span class="n">SourceConfigDefinition</span>
-<span class="kn">from</span> <span class="nn">dlpx.virtualization.platform.exceptions</span> <span class="kn">import</span> <span class="n">UserError</span>
-
-<span class="n">plugin</span> <span class="o">=</span> <span class="n">Plugin</span><span class="p">()</span>
-
-<span class="nd">@plugin</span><span class="o">.</span><span class="n">virtual</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
-<span class="k">def</span> <span class="nf">start</span><span class="p">(</span><span class="n">virtual_source</span><span class="p">,</span> <span class="n">repository</span><span class="p">,</span> <span class="n">source_config</span><span class="p">):</span>
-  <span class="n">script_content</span> <span class="o">=</span> <span class="n">pkgutil</span><span class="o">.</span><span class="n">get_data</span><span class="p">(</span><span class="s1">&#39;resources&#39;</span><span class="p">,</span> <span class="s1">&#39;start_database.sh&#39;</span><span class="p">)</span>
-
-  <span class="n">response</span> <span class="o">=</span> <span class="n">libs</span><span class="o">.</span><span class="n">run_bash</span><span class="p">(</span><span class="n">virtual_source</span><span class="o">.</span><span class="n">connection</span><span class="p">,</span> <span class="n">script_content</span><span class="p">)</span>
-
-  <span class="c1"># Fail operation if the database could not be started</span>
-  <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">exit_code</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="k">raise</span> <span class="n">UserError</span><span class="p">(</span>
-    <span class="s1">&#39;Failed to start the database&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;Make sure the user has appropriate permissions&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;</span><span class="si">{}</span><span class="se">\n</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">stdout</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">stderr</span><span class="p">))</span>
-</code></pre></div>
-
-
-<p>The UI would show the end user if the plugin operation above fails:</p>
-<p><img alt="Screenshot" src="../images/UserError_Start.png" /></p>
+                <h1 id="scratch-paths">Scratch Paths<a class="headerlink" href="#scratch-paths" title="Permanent link">&para;</a></h1>
+<p>A scratch path is a directory reserved for plugin use on each remote host. This is intended for uses such as:</p>
+<ul>
+<li>Storage of small amounts of persistent data</li>
+<li>A place to mount VDB data</li>
+<li>Temporary logs for debugging (Be careful that you don't use too much space though!)</li>
+</ul>
+<p>The location of this scratch area is given by the <code>scratch_path</code> property on the <a href="../../References/Classes/#remotehost">RemoteHost</a> object.</p>
+<p>Things to note about the scratch path:</p>
+<ul>
+<li>No guarantees are made about where the path is located on the system.</li>
+<li>No guarantees are made about how much space might be available in this directory. It is strongly advised that you use only a small amount of disk space here.</li>
+<li>The directory will be owned by the "primary user" associated with the remote host. This might be a completely different user from the one that is associated with a particular dsource or VDB.</li>
+<li>If you need to store dSource- or VDB-specific data, it is highly recommended that you create a separate subdirectory for each dSource/VDB inside this scratch area. It's also recommended to name this subdirectory using the GUID of the dSource/VDB, so that you avoid accidental name collisions.</li>
+<li>The Delphix Engine will not do any cleanup for you, so be sure to delete anything you're no longer using. For example, any VDB-specific information must be deleted in your <a href="../../References/Plugin_Operations/#virtual-source-unconfigure">unconfigure</a> operation (and dSource data gets deleted in your <a href="../../References/Plugin_Operations/#staged-linked-source-stop-staging">stopStaging</a> operation.)</li>
+<li>Do not store any <a href="../Sensitive_Data/">sensitive information</a> here!</li>
+</ul>
                 
                   
                 
@@ -1104,7 +1008,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../Managing_Scripts_For_Remote_Execution/" title="Managing Scripts for Remote Execution" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../Working_with_Powershell/" title="Working with Powershell" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1113,19 +1017,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Managing Scripts for Remote Execution
+                Working with Powershell
               </span>
             </div>
           </a>
         
         
-          <a href="../Sensitive_Data/" title="Dealing With Sensitive Data" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../Release_Notes/2.1.0/2.1.0/" title="Release - v2.1.0" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Dealing With Sensitive Data
+                Release - v2.1.0
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

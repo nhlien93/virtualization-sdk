@@ -1098,6 +1098,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Best_Practices/Scratch_Paths/" title="Scratch Paths" class="md-nav__link">
+      Scratch Paths
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1132,10 +1144,46 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-1" type="checkbox" id="nav-7-1">
     
     <label class="md-nav__link" for="nav-7-1">
-      2.0.0
+      2.1.0
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-7-1">
+        2.1.0
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Release_Notes/2.1.0/2.1.0/" title="Release - v2.1.0" class="md-nav__link">
+      Release - v2.1.0
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2">
+    
+    <label class="md-nav__link" for="nav-7-2">
+      2.0.0
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-2">
         2.0.0
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1147,8 +1195,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Release_Notes/2.0.0/2.0.0/" title="Release - GA (v2.0.0)" class="md-nav__link">
-      Release - GA (v2.0.0)
+    <a href="../../../Release_Notes/2.0.0/2.0.0/" title="Release - v2.0.0" class="md-nav__link">
+      Release - v2.0.0
     </a>
   </li>
 
@@ -1177,13 +1225,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-3" type="checkbox" id="nav-7-3">
     
-    <label class="md-nav__link" for="nav-7-2">
+    <label class="md-nav__link" for="nav-7-3">
       1.0.0
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-7-2">
+      <label class="md-nav__title" for="nav-7-3">
         1.0.0
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1195,8 +1243,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Release_Notes/1.0.0/1.0.0/" title="Release - GA (v1.0.0)" class="md-nav__link">
-      Release - GA (v1.0.0)
+    <a href="../../../Release_Notes/1.0.0/1.0.0/" title="Release - v1.0.0" class="md-nav__link">
+      Release - v1.0.0
     </a>
   </li>
 
@@ -1225,13 +1273,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-3" type="checkbox" id="nav-7-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-4" type="checkbox" id="nav-7-4">
     
-    <label class="md-nav__link" for="nav-7-3">
+    <label class="md-nav__link" for="nav-7-4">
       0.4.0
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-7-3">
+      <label class="md-nav__title" for="nav-7-4">
         0.4.0
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1662,7 +1710,7 @@
                 
                 <h1 id="plugin-operations">Plugin Operations<a class="headerlink" href="#plugin-operations" title="Permanent link">&para;</a></h1>
 <h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
-<p>Included below are all plugin operations that have to do with lua migrations. For regular operation information go <a href="../../../References/Plugin_Operations/">here</a>.</p>
+<p>Plugin operations related to Lua migrations are listed below. Information regarding other operations is <a href="../../../References/Plugin_Operations/">here</a>.</p>
 <table>
 <thead>
 <tr>
@@ -1706,7 +1754,7 @@
 </tbody>
 </table>
 <h2 id="lua-repository-data-migration">Lua Repository Data Migration<a class="headerlink" href="#lua-repository-data-migration" title="Permanent link">&para;</a></h2>
-<p>A Lua Repository <a href="../../../References/Glossary/#data-migration">Data Migration</a> migrates repository data from an older <a href="../../../References/Glossary/#schema">schema</a> format defined originally from a lua toolkit to an updated schema format defined in the Python plugin.</p>
+<p>A Lua Repository <a href="../../../References/Glossary/#data-migration">Data Migration</a> migrates repository data from an older <a href="../../../References/Glossary/#schema">schema</a> format defined originally from a Lua toolkit to an updated schema format defined in the Python plugin.</p>
 <h3 id="required-optional">Required / Optional<a class="headerlink" href="#required-optional" title="Permanent link">&para;</a></h3>
 <p><strong>Optional.</strong><br/></p>
 <div class="admonition warning">
@@ -1734,12 +1782,12 @@
 <tr>
 <td>lua_version</td>
 <td>String</td>
-<td>The lua version of the migration that the upgrade would be migrating from. This is the ID of this migration. The version here is actually just the major and minor version of the lua toolkit therefore each defined migration's lua_version per repository data migration must be unique.</td>
+<td>The Lua version of the toolkit that this migration would be applicable to. This is the ID of this migration. The version here is actually just the major and minor version of the Lua toolkit. Therefore the <code>lua_version</code> for each repository data migration must be unique.</td>
 </tr>
 <tr>
 <td>migration_type</td>
 <td>String</td>
-<td>This migration type field indicates whether the operation is lua or just a regular data migration. Signify this as LUA so that the major minor version can be used. If not defined, this operation will default to a regular <a href="../../../References/Plugin_Operations/#repository-data-migration">repository data migration</a>.</td>
+<td>This field indicates whether the operation is a Lua migration or just a regular data migration. Specify this as LUA to indicate a Lua migration. If not defined, this operation will default to a regular <a href="../../../References/Plugin_Operations/#repository-data-migration">repository data migration</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -1756,7 +1804,7 @@
 <tr>
 <td>old_repository</td>
 <td>Dictionary</td>
-<td>The plugin-specific data associated with a repository, that conforms to the previous schema defined in lua.</td>
+<td>The plugin-specific data associated with a repository, that conforms to the previous schema defined in Lua.</td>
 </tr>
 </tbody>
 </table>
@@ -1768,20 +1816,20 @@
 <p>Dictionary<br/>
 A migrated version of the <code>old_repository</code> input that must conform to the updated repository schema.</p>
 <h3 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">dlpx.virtualization.platform</span> <span class="kn">import</span> <span class="n">Plugin</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">dlpx.virtualization.platform</span> <span class="kn">import</span> <span class="n">Plugin</span>
 
 <span class="n">plugin</span> <span class="o">=</span> <span class="n">Plugin</span><span class="p">()</span>
 
-<span class="nd">@plugin.upgrade.repository</span><span class="p">(</span><span class="s2">&quot;1.1&quot;</span><span class="p">,</span> <span class="n">MigrationType</span><span class="o">.</span><span class="n">LUA</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">add_new_flag_to_repo</span><span class="p">(</span><span class="n">old_repository</span><span class="p">):</span>
+<span class="nd">@plugin</span><span class="o">.</span><span class="n">upgrade</span><span class="o">.</span><span class="n">repository</span><span class="p">(</span><span class="s2">&quot;1.1&quot;</span><span class="p">,</span> <span class="n">MigrationType</span><span class="o">.</span><span class="n">LUA</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">add_new_flag_to_repository</span><span class="p">(</span><span class="n">old_repository</span><span class="p">):</span>
   <span class="n">new_repository</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">old_repository</span><span class="p">)</span>
-  <span class="n">new_repository</span><span class="p">[</span><span class="s2">&quot;useNewFeature&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
+  <span class="n">new_repository</span><span class="p">[</span><span class="s2">&quot;useNewFeature&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
   <span class="k">return</span> <span class="n">new_repository</span>
-</pre></div>
+</code></pre></div>
 
 
 <h2 id="lua-source-config-data-migration">Lua Source Config Data Migration<a class="headerlink" href="#lua-source-config-data-migration" title="Permanent link">&para;</a></h2>
-<p>A Lua Source Config <a href="../../../References/Glossary/#data-migration">Data Migration</a> migrates source config data from an older <a href="../../../References/Glossary/#schema">schema</a> format defined originally from a lua toolkit to an updated schema format defined in the Python plugin.</p>
+<p>A Lua Source Config <a href="../../../References/Glossary/#data-migration">Data Migration</a> migrates source config data from an older <a href="../../../References/Glossary/#schema">schema</a> format defined originally from a Lua toolkit to an updated schema format defined in the Python plugin.</p>
 <h3 id="required-optional_1">Required / Optional<a class="headerlink" href="#required-optional_1" title="Permanent link">&para;</a></h3>
 <p><strong>Optional.</strong><br/></p>
 <div class="admonition warning">
@@ -1809,12 +1857,12 @@ A migrated version of the <code>old_repository</code> input that must conform to
 <tr>
 <td>lua_version</td>
 <td>String</td>
-<td>The lua version of the migration that the upgrade would be migrating from. This is the ID of this migration. The version here is actually just the major and minor version of the lua toolkit therefore each defined migration's lua_version per source config data migration must be unique.</td>
+<td>The Lua version of the toolkit that this migration would be applicable to. This is the ID of this migration. The version here is actually just the major and minor version of the Lua toolkit. Therefore the <code>lua_version</code> for each repository data migration must be unique.</td>
 </tr>
 <tr>
 <td>migration_type</td>
 <td>String</td>
-<td>This migration type field indicates whether the operation is lua or just a regular data migration. Signify this as LUA so that the major minor version can be used. If not defined, this operation will default to a regular <a href="../../../References/Plugin_Operations/#source-config-data-migration">source config data migration</a>.</td>
+<td>This field indicates whether the operation is a Lua migration or just a regular data migration. Specify this as LUA to indicate a Lua migration. If not defined, this operation will default to a regular <a href="../../../References/Plugin_Operations/#source-config-data-migration">source config data migration</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -1843,20 +1891,20 @@ A migrated version of the <code>old_repository</code> input that must conform to
 <p>Dictionary<br/>
 A migrated version of the <code>old_source_config</code> input that must conform to the updated source config schema.</p>
 <h3 id="example_1">Example<a class="headerlink" href="#example_1" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">dlpx.virtualization.platform</span> <span class="kn">import</span> <span class="n">Plugin</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">dlpx.virtualization.platform</span> <span class="kn">import</span> <span class="n">Plugin</span>
 
 <span class="n">plugin</span> <span class="o">=</span> <span class="n">Plugin</span><span class="p">()</span>
 
-<span class="nd">@plugin.upgrade.source_config</span><span class="p">(</span><span class="s2">&quot;1.1&quot;</span><span class="p">,</span> <span class="n">MigrationType</span><span class="o">.</span><span class="n">LUA</span><span class="p">)</span>
+<span class="nd">@plugin</span><span class="o">.</span><span class="n">upgrade</span><span class="o">.</span><span class="n">source_config</span><span class="p">(</span><span class="s2">&quot;1.1&quot;</span><span class="p">,</span> <span class="n">MigrationType</span><span class="o">.</span><span class="n">LUA</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">add_new_flag_to_source_config</span><span class="p">(</span><span class="n">old_source_config</span><span class="p">):</span>
   <span class="n">new_source_config</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">old_source_config</span><span class="p">)</span>
-  <span class="n">new_source_config</span><span class="p">[</span><span class="s2">&quot;useNewFeature&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
+  <span class="n">new_source_config</span><span class="p">[</span><span class="s2">&quot;useNewFeature&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
   <span class="k">return</span> <span class="n">new_source_config</span>
-</pre></div>
+</code></pre></div>
 
 
 <h2 id="lua-linked-source-data-migration">Lua Linked Source Data Migration<a class="headerlink" href="#lua-linked-source-data-migration" title="Permanent link">&para;</a></h2>
-<p>A Lua Linked Source <a href="../../../References/Glossary/#data-migration">Data Migration</a> migrates linked source data from an older <a href="../../../References/Glossary/#schema">schema</a> format defined originally from a lua toolkit to an updated schema format defined in the Python plugin.</p>
+<p>A Lua Linked Source <a href="../../../References/Glossary/#data-migration">Data Migration</a> migrates linked source data from an older <a href="../../../References/Glossary/#schema">schema</a> format defined originally from a Lua toolkit to an updated schema format defined in the Python plugin.</p>
 <h3 id="required-optional_2">Required / Optional<a class="headerlink" href="#required-optional_2" title="Permanent link">&para;</a></h3>
 <p><strong>Optional.</strong><br/></p>
 <div class="admonition warning">
@@ -1884,12 +1932,12 @@ A migrated version of the <code>old_source_config</code> input that must conform
 <tr>
 <td>lua_version</td>
 <td>String</td>
-<td>The lua version of the migration that the upgrade would be migrating from. This is the ID of this migration. The version here is actually just the major and minor version of the lua toolkit therefore each defined migration's lua_version per linked source data migration must be unique.</td>
+<td>The Lua version of the toolkit that this migration would be applicable to. This is the ID of this migration. The version here is actually just the major and minor version of the Lua toolkit. Therefore the <code>lua_version</code> for each repository data migration must be unique.</td>
 </tr>
 <tr>
 <td>migration_type</td>
 <td>String</td>
-<td>This migration type field indicates whether the operation is lua or just a regular data migration. Signify this as LUA so that the major minor version can be used. If not defined, this operation will default to a regular <a href="../../../References/Plugin_Operations/#linked-source-data-migration">linked source data migration</a>.</td>
+<td>This field indicates whether the operation is a Lua migration or just a regular data migration. Specify this as LUA to indicate a Lua migration. If not defined, this operation will default to a regular <a href="../../../References/Plugin_Operations/#linked-source-data-migration">linked source data migration</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -1918,20 +1966,20 @@ A migrated version of the <code>old_source_config</code> input that must conform
 <p>Dictionary<br/>
 A migrated version of the <code>old_linked_source</code> input that must conform to the updated linked source schema.</p>
 <h3 id="example_2">Example<a class="headerlink" href="#example_2" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">dlpx.virtualization.platform</span> <span class="kn">import</span> <span class="n">Plugin</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">dlpx.virtualization.platform</span> <span class="kn">import</span> <span class="n">Plugin</span>
 
 <span class="n">plugin</span> <span class="o">=</span> <span class="n">Plugin</span><span class="p">()</span>
 
-<span class="nd">@plugin.upgrade.linked_source</span><span class="p">(</span><span class="s2">&quot;1.1&quot;</span><span class="p">,</span> <span class="n">MigrationType</span><span class="o">.</span><span class="n">LUA</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">add_new_flag_to_dsource</span><span class="p">(</span><span class="n">old_linked_source</span><span class="p">):</span>
+<span class="nd">@plugin</span><span class="o">.</span><span class="n">upgrade</span><span class="o">.</span><span class="n">linked_source</span><span class="p">(</span><span class="s2">&quot;1.1&quot;</span><span class="p">,</span> <span class="n">MigrationType</span><span class="o">.</span><span class="n">LUA</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">add_new_flag_to_linked_source</span><span class="p">(</span><span class="n">old_linked_source</span><span class="p">):</span>
   <span class="n">new_linked_source</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">old_linked_source</span><span class="p">)</span>
-  <span class="n">new_linked_source</span><span class="p">[</span><span class="s2">&quot;useNewFeature&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
+  <span class="n">new_linked_source</span><span class="p">[</span><span class="s2">&quot;useNewFeature&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
   <span class="k">return</span> <span class="n">new_linked_source</span>
-</pre></div>
+</code></pre></div>
 
 
 <h2 id="lua-virtual-source-data-migration">Lua Virtual Source Data Migration<a class="headerlink" href="#lua-virtual-source-data-migration" title="Permanent link">&para;</a></h2>
-<p>A Lua Virtual Source <a href="../../../References/Glossary/#data-migration">Data Migration</a> migrates virtual source data from an older <a href="../../../References/Glossary/#schema">schema</a> format defined originally from a lua toolkit to an updated schema format defined in the Python plugin.</p>
+<p>A Lua Virtual Source <a href="../../../References/Glossary/#data-migration">Data Migration</a> migrates virtual source data from an older <a href="../../../References/Glossary/#schema">schema</a> format defined originally from a Lua toolkit to an updated schema format defined in the Python plugin.</p>
 <h3 id="required-optional_3">Required / Optional<a class="headerlink" href="#required-optional_3" title="Permanent link">&para;</a></h3>
 <p><strong>Optional.</strong><br/></p>
 <div class="admonition warning">
@@ -1959,12 +2007,12 @@ A migrated version of the <code>old_linked_source</code> input that must conform
 <tr>
 <td>lua_version</td>
 <td>String</td>
-<td>The lua version of the migration that the upgrade would be migrating from. This is the ID of this migration. The version here is actually just the major and minor version of the lua toolkit therefore each defined migration's lua_version per virtual source data migration must be unique.</td>
+<td>The Lua version of the toolkit that this migration would be applicable to. This is the ID of this migration. The version here is actually just the major and minor version of the Lua toolkit. Therefore the <code>lua_version</code> for each repository data migration must be unique.</td>
 </tr>
 <tr>
 <td>migration_type</td>
 <td>String</td>
-<td>This migration type field indicates whether the operation is lua or just a regular data migration. Signify this as LUA so that the major minor version can be used. If not defined, this operation will default to a regular <a href="../../../References/Plugin_Operations/#virtual-source-data-migration">virtual source data migration</a>.</td>
+<td>This field indicates whether the operation is a Lua migration or just a regular data migration. Specify this as LUA to indicate a Lua migration. If not defined, this operation will default to a regular <a href="../../../References/Plugin_Operations/#virtual-source-data-migration">virtual source data migration</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -1993,20 +2041,20 @@ A migrated version of the <code>old_linked_source</code> input that must conform
 <p>Dictionary<br/>
 A migrated version of the <code>old_virtual_source</code> input that must conform to the updated virtual source schema.</p>
 <h3 id="example_3">Example<a class="headerlink" href="#example_3" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">dlpx.virtualization.platform</span> <span class="kn">import</span> <span class="n">Plugin</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">dlpx.virtualization.platform</span> <span class="kn">import</span> <span class="n">Plugin</span>
 
 <span class="n">plugin</span> <span class="o">=</span> <span class="n">Plugin</span><span class="p">()</span>
 
-<span class="nd">@plugin.upgrade.virtual_source</span><span class="p">(</span><span class="s2">&quot;1.1&quot;</span><span class="p">,</span> <span class="n">MigrationType</span><span class="o">.</span><span class="n">LUA</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">add_new_flag_to_vdb</span><span class="p">(</span><span class="n">old_virtual_source</span><span class="p">):</span>
+<span class="nd">@plugin</span><span class="o">.</span><span class="n">upgrade</span><span class="o">.</span><span class="n">virtual_source</span><span class="p">(</span><span class="s2">&quot;1.1&quot;</span><span class="p">,</span> <span class="n">MigrationType</span><span class="o">.</span><span class="n">LUA</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">add_new_flag_to_virtual_source</span><span class="p">(</span><span class="n">old_virtual_source</span><span class="p">):</span>
   <span class="n">new_virtual_source</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">old_virtual_source</span><span class="p">)</span>
-  <span class="n">new_virtual_source</span><span class="p">[</span><span class="s2">&quot;useNewFeature&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
+  <span class="n">new_virtual_source</span><span class="p">[</span><span class="s2">&quot;useNewFeature&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
   <span class="k">return</span> <span class="n">new_virtual_source</span>
-</pre></div>
+</code></pre></div>
 
 
 <h2 id="lua-snapshot-data-migration">Lua Snapshot Data Migration<a class="headerlink" href="#lua-snapshot-data-migration" title="Permanent link">&para;</a></h2>
-<p>A Lua Snapshot <a href="../../../References/Glossary/#data-migration">Data Migration</a> migrates snapshot data from an older <a href="../../../References/Glossary/#schema">schema</a> format defined originally from a lua toolkit to an updated schema format defined in the Python plugin.</p>
+<p>A Lua Snapshot <a href="../../../References/Glossary/#data-migration">Data Migration</a> migrates snapshot data from an older <a href="../../../References/Glossary/#schema">schema</a> format defined originally from a Lua toolkit to an updated schema format defined in the Python plugin.</p>
 <h3 id="required-optional_4">Required / Optional<a class="headerlink" href="#required-optional_4" title="Permanent link">&para;</a></h3>
 <p><strong>Optional.</strong><br/></p>
 <div class="admonition warning">
@@ -2034,12 +2082,12 @@ A migrated version of the <code>old_virtual_source</code> input that must confor
 <tr>
 <td>lua_version</td>
 <td>String</td>
-<td>The lua version of the migration that the upgrade would be migrating from. This is the ID of this migration. The version here is actually just the major and minor version of the lua toolkit therefore each defined migration's lua_version per snapshot data migration must be unique.</td>
+<td>The Lua version of the toolkit that this migration would be applicable to. This is the ID of this migration. The version here is actually just the major and minor version of the Lua toolkit. Therefore the <code>lua_version</code> for each repository data migration must be unique.</td>
 </tr>
 <tr>
 <td>migration_type</td>
 <td>String</td>
-<td>This migration type field indicates whether the operation is lua or just a regular data migration. Signify this as LUA so that the major minor version can be used. If not defined, this operation will default to a regular <a href="../../../References/Plugin_Operations/#snapshot-data-migration">snapshot data migration</a>.</td>
+<td>This field indicates whether the operation is a Lua migration or just a regular data migration. Specify this as LUA to indicate a Lua migration. If not defined, this operation will default to a regular <a href="../../../References/Plugin_Operations/#snapshot-data-migration">snapshot data migration</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -2068,16 +2116,16 @@ A migrated version of the <code>old_virtual_source</code> input that must confor
 <p>Dictionary<br/>
 A migrated version of the <code>old_snapshot</code> input that must conform to the updated snapshot schema.</p>
 <h3 id="example_4">Example<a class="headerlink" href="#example_4" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">dlpx.virtualization.platform</span> <span class="kn">import</span> <span class="n">Plugin</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">dlpx.virtualization.platform</span> <span class="kn">import</span> <span class="n">Plugin</span>
 
 <span class="n">plugin</span> <span class="o">=</span> <span class="n">Plugin</span><span class="p">()</span>
 
-<span class="nd">@plugin.upgrade.snapshot</span><span class="p">(</span><span class="s2">&quot;1.1&quot;</span><span class="p">,</span> <span class="n">MigrationType</span><span class="o">.</span><span class="n">LUA</span><span class="p">)</span>
+<span class="nd">@plugin</span><span class="o">.</span><span class="n">upgrade</span><span class="o">.</span><span class="n">snapshot</span><span class="p">(</span><span class="s2">&quot;1.1&quot;</span><span class="p">,</span> <span class="n">MigrationType</span><span class="o">.</span><span class="n">LUA</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">add_new_flag_to_snapshot</span><span class="p">(</span><span class="n">old_snapshot</span><span class="p">):</span>
   <span class="n">new_snapshot</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">old_snapshot</span><span class="p">)</span>
-  <span class="n">new_snapshot</span><span class="p">[</span><span class="s2">&quot;useNewFeature&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
+  <span class="n">new_snapshot</span><span class="p">[</span><span class="s2">&quot;useNewFeature&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
   <span class="k">return</span> <span class="n">new_snapshot</span>
-</pre></div>
+</code></pre></div>
                 
                   
                 

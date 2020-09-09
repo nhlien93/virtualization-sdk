@@ -933,6 +933,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Best_Practices/Scratch_Paths/" title="Scratch Paths" class="md-nav__link">
+      Scratch Paths
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -967,10 +979,46 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-1" type="checkbox" id="nav-7-1">
     
     <label class="md-nav__link" for="nav-7-1">
-      2.0.0
+      2.1.0
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-7-1">
+        2.1.0
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Release_Notes/2.1.0/2.1.0/" title="Release - v2.1.0" class="md-nav__link">
+      Release - v2.1.0
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2">
+    
+    <label class="md-nav__link" for="nav-7-2">
+      2.0.0
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-2">
         2.0.0
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -982,8 +1030,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Release_Notes/2.0.0/2.0.0/" title="Release - GA (v2.0.0)" class="md-nav__link">
-      Release - GA (v2.0.0)
+    <a href="../../Release_Notes/2.0.0/2.0.0/" title="Release - v2.0.0" class="md-nav__link">
+      Release - v2.0.0
     </a>
   </li>
 
@@ -1012,13 +1060,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-3" type="checkbox" id="nav-7-3">
     
-    <label class="md-nav__link" for="nav-7-2">
+    <label class="md-nav__link" for="nav-7-3">
       1.0.0
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-7-2">
+      <label class="md-nav__title" for="nav-7-3">
         1.0.0
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1030,8 +1078,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Release_Notes/1.0.0/1.0.0/" title="Release - GA (v1.0.0)" class="md-nav__link">
-      Release - GA (v1.0.0)
+    <a href="../../Release_Notes/1.0.0/1.0.0/" title="Release - v1.0.0" class="md-nav__link">
+      Release - v1.0.0
     </a>
   </li>
 
@@ -1060,13 +1108,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-3" type="checkbox" id="nav-7-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-4" type="checkbox" id="nav-7-4">
     
-    <label class="md-nav__link" for="nav-7-3">
+    <label class="md-nav__link" for="nav-7-4">
       0.4.0
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-7-3">
+      <label class="md-nav__title" for="nav-7-4">
         0.4.0
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1338,7 +1386,7 @@
 <p>Every command has a <code>-h</code> flag including the CLI itself. This will print the help menu.</p>
 <h4 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h4>
 <p>Get the CLI's help menu.</p>
-<div class="codehilite"><pre><span></span>$ dvp -h
+<div class="codehilite"><pre><span></span><code>$ dvp -h
 Usage: dvp [OPTIONS] COMMAND [ARGS]...
 
   The tools of the Delphix Virtualization SDK that help develop, build, and
@@ -1360,11 +1408,11 @@ Commands:
   init           Create a plugin in the root directory.
   upload         Upload the generated upload artifact (the plugin JSON
                  file)...
-</pre></div>
+</code></pre></div>
 
 
 <p>Get the <code>build</code> command's help menu.</p>
-<div class="codehilite"><pre><span></span>$ dvp build -h
+<div class="codehilite"><pre><span></span><code>$ dvp build -h
 Usage: dvp build [OPTIONS]
 
   Build the plugin code and generate upload artifact file using the
@@ -1382,7 +1430,7 @@ Options:
                               definitions. Do not do a full build or create an
                               upload artifact.  [default: False]
   -h, --help                  Show this message and exit.
-</pre></div>
+</code></pre></div>
 
 
 <h2 id="verbosity">Verbosity<a class="headerlink" href="#verbosity" title="Permanent link">&para;</a></h2>
@@ -1423,13 +1471,13 @@ Options:
 </table>
 <h3 id="examples_1">Examples<a class="headerlink" href="#examples_1" title="Permanent link">&para;</a></h3>
 <p>Print everything to the console.</p>
-<div class="codehilite"><pre><span></span>$ dvp -vvv build
-</pre></div>
+<div class="codehilite"><pre><span></span><code>$ dvp -vvv build
+</code></pre></div>
 
 
 <p>Print nothing to the console.</p>
-<div class="codehilite"><pre><span></span>$ dvp -qqq build
-</pre></div>
+<div class="codehilite"><pre><span></span><code>$ dvp -qqq build
+</code></pre></div>
 
 
 <h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>
@@ -1475,23 +1523,23 @@ Options:
 </table>
 <h4 id="examples_2">Examples<a class="headerlink" href="#examples_2" title="Permanent link">&para;</a></h4>
 <p>Create a <code>UNIX</code> plugin in the current working directory with the <code>DIRECT</code> ingestion strategy. Here the name of the plugin will be equal to the id that is generated.</p>
-<div class="codehilite"><pre><span></span>$ dvp init
-</pre></div>
+<div class="codehilite"><pre><span></span><code>$ dvp init
+</code></pre></div>
 
 
 <p>Create a <code>UNIX</code> plugin in the current working directory with the <code>DIRECT</code> ingestion strategy and use <code>postgres</code> as the display name.</p>
-<div class="codehilite"><pre><span></span>$ dvp init -n postgres
-</pre></div>
+<div class="codehilite"><pre><span></span><code>$ dvp init -n postgres
+</code></pre></div>
 
 
 <p>Create a <code>UNIX</code> plugin called <code>mongodb</code> in a custom location with the <code>STAGED</code> ingestion strategy.</p>
-<div class="codehilite"><pre><span></span>$ dvp init -n mongodb -s STAGED -r /our/plugin/directory
-</pre></div>
+<div class="codehilite"><pre><span></span><code>$ dvp init -n mongodb -s STAGED -r /our/plugin/directory
+</code></pre></div>
 
 
 <p>Create a <code>WINDOWS</code> plugin called <code>mssql</code> in the current working directory with the <code>DIRECT</code> ingestion strategy.</p>
-<div class="codehilite"><pre><span></span>$ dvp init -n mssql -t WINDOWS
-</pre></div>
+<div class="codehilite"><pre><span></span><code>$ dvp init -n mssql -t WINDOWS
+</code></pre></div>
 
 
 <hr />
@@ -1532,19 +1580,19 @@ Options:
 <h4 id="examples_3">Examples<a class="headerlink" href="#examples_3" title="Permanent link">&para;</a></h4>
 <p>Do a full build of the plugin and write the upload artifact to <code>./artifact.json</code>.</p>
 <p>This assumes current working directory contains a plugin config file named <code>plugin_config.yml</code>.</p>
-<div class="codehilite"><pre><span></span>$ dvp build
-</pre></div>
+<div class="codehilite"><pre><span></span><code>$ dvp build
+</code></pre></div>
 
 
 <p>Do a partial build and just generate the Python classes from the schema definitions.</p>
 <p>This assumes current working directory contains ad plugin config file named <code>plugin_config.yml</code>.</p>
-<div class="codehilite"><pre><span></span>$ dvp build -g
-</pre></div>
+<div class="codehilite"><pre><span></span><code>$ dvp build -g
+</code></pre></div>
 
 
 <p>Do a full build of a plugin and write the artifact file to a custom location.</p>
-<div class="codehilite"><pre><span></span>$ dvp build -c config.yml -a build/artifact.json
-</pre></div>
+<div class="codehilite"><pre><span></span><code>$ dvp build -c config.yml -a build/artifact.json
+</code></pre></div>
 
 
 <hr />
@@ -1596,9 +1644,9 @@ Options:
 </table>
 <h4 id="examples_4">Examples<a class="headerlink" href="#examples_4" title="Permanent link">&para;</a></h4>
 <p>Upload artifact <code>build/artifact.json</code> to <code>engine.example.com</code> using the user <code>admin</code>. Since the password option is ommitted, a secure password prompt is used instead.</p>
-<div class="codehilite"><pre><span></span>$ dvp upload -a build/artifact -e engine.example.com -u admin
+<div class="codehilite"><pre><span></span><code>$ dvp upload -a build/artifact -e engine.example.com -u admin
 Password:
-</pre></div>
+</code></pre></div>
 
 
 <hr />
@@ -1650,9 +1698,9 @@ Password:
 </table>
 <h4 id="examples_5">Examples<a class="headerlink" href="#examples_5" title="Permanent link">&para;</a></h4>
 <p>Download plugin logs from <code>engine.example.com</code> using the user <code>admin</code>. Since the password option is ommitted, a secure password prompt is used instead.</p>
-<div class="codehilite"><pre><span></span>$ dvp download-logs -e engine.example.com -u admin
+<div class="codehilite"><pre><span></span><code>$ dvp download-logs -e engine.example.com -u admin
 Password:
-</pre></div>
+</code></pre></div>
                 
                   
                 

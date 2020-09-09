@@ -751,6 +751,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Scratch_Paths/" title="Scratch Paths" class="md-nav__link">
+      Scratch Paths
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -785,10 +797,46 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-1" type="checkbox" id="nav-7-1">
     
     <label class="md-nav__link" for="nav-7-1">
-      2.0.0
+      2.1.0
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-7-1">
+        2.1.0
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Release_Notes/2.1.0/2.1.0/" title="Release - v2.1.0" class="md-nav__link">
+      Release - v2.1.0
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2">
+    
+    <label class="md-nav__link" for="nav-7-2">
+      2.0.0
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-2">
         2.0.0
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -800,8 +848,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Release_Notes/2.0.0/2.0.0/" title="Release - GA (v2.0.0)" class="md-nav__link">
-      Release - GA (v2.0.0)
+    <a href="../../Release_Notes/2.0.0/2.0.0/" title="Release - v2.0.0" class="md-nav__link">
+      Release - v2.0.0
     </a>
   </li>
 
@@ -830,13 +878,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-3" type="checkbox" id="nav-7-3">
     
-    <label class="md-nav__link" for="nav-7-2">
+    <label class="md-nav__link" for="nav-7-3">
       1.0.0
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-7-2">
+      <label class="md-nav__title" for="nav-7-3">
         1.0.0
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -848,8 +896,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Release_Notes/1.0.0/1.0.0/" title="Release - GA (v1.0.0)" class="md-nav__link">
-      Release - GA (v1.0.0)
+    <a href="../../Release_Notes/1.0.0/1.0.0/" title="Release - v1.0.0" class="md-nav__link">
+      Release - v1.0.0
     </a>
   </li>
 
@@ -878,13 +926,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-3" type="checkbox" id="nav-7-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-4" type="checkbox" id="nav-7-4">
     
-    <label class="md-nav__link" for="nav-7-3">
+    <label class="md-nav__link" for="nav-7-4">
       0.4.0
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-7-3">
+      <label class="md-nav__title" for="nav-7-4">
         0.4.0
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -970,14 +1018,14 @@
                 
                 <h1 id="working-with-unicode-data">Working with Unicode Data<a class="headerlink" href="#working-with-unicode-data" title="Permanent link">&para;</a></h1>
 <p>To use unicode characters in the plugin code, the following lines should be included at top of the plugin code:</p>
-<div class="codehilite"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
+<div class="codehilite"><pre><span></span><code><span class="ch">#!/usr/bin/env python</span>
 <span class="c1"># -*- coding: utf-8 -*-</span>
-</pre></div>
+</code></pre></div>
 
 
 <p>Otherwise, there may be errors when building the plugin using <a href="../../References/CLI/#build">dvp build</a> or during the execution of a plugin operation.</p>
 <h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
+<div class="codehilite"><pre><span></span><code><span class="ch">#!/usr/bin/env python</span>
 <span class="c1"># -*- coding: utf-8 -*-</span>
 <span class="kn">from</span> <span class="nn">dlpx.virtualization.platform</span> <span class="kn">import</span> <span class="n">Plugin</span>
 <span class="kn">from</span> <span class="nn">dlpx.virtualization</span> <span class="kn">import</span> <span class="n">libs</span>
@@ -985,13 +1033,13 @@
 
 <span class="n">plugin</span> <span class="o">=</span> <span class="n">Plugin</span><span class="p">()</span>
 
-<span class="nd">@plugin.discovery.repository</span><span class="p">()</span>
+<span class="nd">@plugin</span><span class="o">.</span><span class="n">discovery</span><span class="o">.</span><span class="n">repository</span><span class="p">()</span>
 <span class="k">def</span> <span class="nf">repository_discovery</span><span class="p">(</span><span class="n">source_connection</span><span class="p">):</span>
     <span class="c1"># Create a repository with name ☃</span>
     <span class="n">command</span> <span class="o">=</span> <span class="s1">&#39;echo ☃&#39;</span>
     <span class="n">result</span> <span class="o">=</span> <span class="n">libs</span><span class="o">.</span><span class="n">run_bash</span><span class="p">(</span><span class="n">source_connection</span><span class="p">,</span> <span class="n">command</span><span class="p">)</span>
     <span class="k">return</span> <span class="p">[</span><span class="n">RepositoryDefinition</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">result</span><span class="o">.</span><span class="n">stdout</span><span class="p">)]</span>
-</pre></div>
+</code></pre></div>
                 
                   
                 
