@@ -982,7 +982,7 @@ In the example below, it first instantiates a <code>Plugin()</code> object, that
 <span class="c1"># Use the decorator to annotate the function that corresponds to the &quot;Virtual Source Start&quot; Plugin Operation</span>
 <span class="nd">@plugin</span><span class="o">.</span><span class="n">virtual_source</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
 <span class="k">def</span> <span class="nf">my_start</span><span class="p">(</span><span class="n">virtual_source</span><span class="p">,</span> <span class="n">repository</span><span class="p">,</span> <span class="n">source_config</span><span class="p">):</span>
-  <span class="nb">print</span> <span class="s2">&quot;running start&quot;</span> 
+  <span class="nb">print</span> <span class="s2">&quot;running start&quot;</span>
 </code></pre></div>
 
 
@@ -990,7 +990,7 @@ In the example below, it first instantiates a <code>Plugin()</code> object, that
 <p class="admonition-title">Info</p>
 <p>Decorators exposed by the Virtualization SDK are inherently python function calls and needs parentheses <code>()</code> appended at the end.</p>
 </div>
-<p>Assuming the name of the object, is <code>plugin</code> as above, the table below lists the corresponding decorators for each plugin operation.</p>
+<p>Assuming the name of the object is <code>plugin</code> as above, the table below lists the corresponding decorators for each plugin operation.</p>
 <table>
 <thead>
 <tr>
@@ -1046,6 +1046,10 @@ In the example below, it first instantiates a <code>Plugin()</code> object, that
 <tr>
 <td><a href="../Plugin_Operations/#virtual-source-configure">Virtual Source Configure</a></td>
 <td><code>@plugin.virtual.configure()</code></td>
+</tr>
+<tr>
+<td><a href="../Plugin_Operations/#virtual-source-initialize">Virtual Source Initialize</a></td>
+<td><code>@plugin.virtual.initialize()</code></td>
 </tr>
 <tr>
 <td><a href="../Plugin_Operations/#virtual-source-unconfigure">Virtual Source Unconfigure</a></td>

@@ -689,6 +689,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#empty-vdb" title="Empty VDB" class="md-nav__link">
+    Empty VDB
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#environment" title="Environment" class="md-nav__link">
     Environment
   </a>
@@ -1336,6 +1343,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#empty-vdb" title="Empty VDB" class="md-nav__link">
+    Empty VDB
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#environment" title="Environment" class="md-nav__link">
     Environment
   </a>
@@ -1595,6 +1609,10 @@
 <p>The process by which the Delphix Engine learns about how a particular environment can be used for ingesting or virtualizing datasets.</p>
 <h2 id="dsource">dSource<a class="headerlink" href="#dsource" title="Permanent link">&para;</a></h2>
 <p>See <a href="#linked-dataset">Linked Dataset</a></p>
+<h2 id="empty-vdb">Empty VDB<a class="headerlink" href="#empty-vdb" title="Permanent link">&para;</a></h2>
+<p>A VDB that is created from scratch, without provisioning from another dataset. Users can create empty VDBs when they want to construct a brand-new dataset from within Delphix, instead of creating it externally and then ingesting it.</p>
+<p>This "empty" VDB, of course, will typically not stay empty for long. Data will be added as users work with the new dataset.</p>
+<p>A plugin can support this functionality by implementing the <a href="../Plugin_Operations/#virtual-source-initialize">initialize</a> operation.</p>
 <h2 id="environment">Environment<a class="headerlink" href="#environment" title="Permanent link">&para;</a></h2>
 <p>A remote system that the Delphix Engine can interact with. An environment can be used as a <a href="#source-environment">source</a>, <a href="#staging-environment">staging</a> or <a href="#target-environment">target</a> environment (or any combination of those).  For example, a Linux machine that the Delphix Engine can connect to is an environment.</p>
 <h2 id="environment-user">Environment User<a class="headerlink" href="#environment-user" title="Permanent link">&para;</a></h2>
@@ -1647,7 +1665,7 @@ For example, a MySQL plugin might provide an operation called "stop" which knows
 <h2 id="target-environment">Target Environment<a class="headerlink" href="#target-environment" title="Permanent link">&para;</a></h2>
 <p>An <a href="#environment">environment</a> on which Delphix-provided virtualized datasets can be used.</p>
 <h2 id="lua-toolkit">Lua Toolkit<a class="headerlink" href="#lua-toolkit" title="Permanent link">&para;</a></h2>
-<p>Legacy model for writing "plugins" in Lua, with limited documentation and support for writing, building and uploading toolkits. This was the predecessor to the Virtualization SDK. </p>
+<p>Legacy model for writing "plugins" in Lua, with limited documentation and limited support for writing, building and uploading toolkits. This was the predecessor to the Virtualization SDK.</p>
 <h2 id="upgrade-operation">Upgrade Operation<a class="headerlink" href="#upgrade-operation" title="Permanent link">&para;</a></h2>
 <p>A special plugin operation that takes data produced by an older version of a plugin, and transforms it into the format expected by the new version of the plugin.</p>
 <h2 id="vdb">VDB<a class="headerlink" href="#vdb" title="Permanent link">&para;</a></h2>
